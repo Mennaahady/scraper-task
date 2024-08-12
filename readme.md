@@ -31,8 +31,7 @@ To recreate the Conda environment used for this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/category-products-scraper.git
-   cd category-products-scraper
+   git clone https://github.com/Mennaahady/scraper-task.git
    ```
 
 2. Create the Conda environment:
