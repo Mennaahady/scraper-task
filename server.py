@@ -14,13 +14,13 @@ def scrape():
         url = data.get('url')
         if not url:
             return jsonify({'error': 'URL is required'}), 400
-        proxies = {
-            'http': "http://10.10.10.10:8000",
-            'https': "http://10.10.10.10:8000",
-        }
+        # proxies = {
+        #     'http': "http://10.10.10.10:8000",
+        #     'https': "http://10.10.10.10:8000",
+        # }
 
 
-        response = requests.get(url, proxies=proxies)
+        response = requests.get(url) #,proxies=proxies)
         response.raise_for_status()
         html_content = response.text
         selector = Selector(text=html_content)
